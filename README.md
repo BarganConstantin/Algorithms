@@ -1,5 +1,6 @@
 Table of Contents
 =================
+* [Fibonacci Algorithms](#Fibonacci-Algorithms)
 * [Sorting Algorithms](#Sorting-Algorithms)
 	* [Quicksort](#Sorting-by-Quicksort-algorithm)
 		* [Implementation of Quicksort](#Implementation-of-Quicksort)
