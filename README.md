@@ -9,7 +9,10 @@ Table of Contents
 		* [Implementation of Radix Sort](#Implementation-of-Radix-Sort)
 	* [Binary InseritonSort](#Sorting-by-Binary-InseritonSort-algorithm)
 		* [Implementation of Binary InseritonSort](#Implementation-of-Binary-InseritonSort)
-
+	* [Empirical analysis](#Empirical analysis of this algorithms)
+		* [Sorted array](#Sorted-array)
+		* [Medium sorted array](#Medium-sorted-array)
+		* [Unsorted array](#Unsorted-array)
 
 # Sorting Algorithms
 
@@ -310,7 +313,7 @@ int binarySearch(int *A, int num, int start, int end)
 
 <br/>
 
-## Execution time in different situations
+## Empirical analysis of this algorithms
 
 &nbsp;&nbsp;&nbsp;&nbsp;After studying, analyzing and implementing the proposed sorting algorithms, we could reach certain conclusions regarding the efficiency of each, because each has certain advantages, but also certain disadvantages.
 <br/>
