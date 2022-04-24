@@ -2,7 +2,7 @@ Table of Contents
 =================
 
 * [Quicksort algorithm](#Sorting-by-Quicksort-algorithm)
-* [MergeSort algorithm](#Sorting by MergeSort algorithm)
+* [MergeSort algorithm](#Sorting-by-MergeSort-algorithm)
 * [Arithmetic operators](#arithmetic-operators)
 * [Comparison operators](#comparison-operators)
 
