@@ -1,23 +1,40 @@
-## Recursive implementation
+## Second implementation (recursive)
 
 ```
-function fib(n)
-    if n < 2 then return n
-    else return fib1(n-1) + fib1(n-2)
+function fib2(n)
+     i = 1; j = 0
+     for k = 1 to n do  j = i + j
+                        i = j - i
+     return j
+
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;We notice that in this example an algorithm was chosen to achieve the condition recursively, if we work with small data this method will give us an answer correctly and of course in a relatively short time, even if they are done calculations several times, but the situation changes with the introduction of data.
+&nbsp;&nbsp;&nbsp;&nbsp;The second algorithm already involves an iterative process, which is a faster approach to solving our problem. At the same time, we will use much less memory from the stack (compared to the previous model) which allows us to exclude the phenomenon of overflow, even if the input data will be very large.
 
-&nbsp;&nbsp;&nbsp;&nbsp;In order to understand this we will represent the recursive calculation process of Fibonacci number 5 through a tree:
+&nbsp;&nbsp;&nbsp;&nbsp;Next we will determine the execution time of the algorithm, to later determine its complexity:
+
+```
+function fib2(n)
+ 1:    i = 1; j = 0
+ 2:   for k = 1 to n do  
+ 3:               j = i + j
+ 4:               i = j - i
+     return j
+
+T(n) = c1*2 + c2 * (1 + n + 1 + 2n) + c3 * 2 * n + c4 * 2 * n=
+= 2 + 2 + 3n + 4n + 2 + 2 = 4 + 7n
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;Because T (n) = 8 + n => the complexity of the algorithm is O (n), let us analyze the graph of the dependence between the data volume and the execution time for the complexity O (n):
 
 <div align="center">
   <kbd>
-    <img src="https://user-images.githubusercontent.com/60443226/164970200-7e2c3923-48c4-4b81-8f77-2b0ba18ddcda.png" alt="MarineGEO circle logo"/>
+    <img src="https://user-images.githubusercontent.com/60443226/164976252-b9088e27-4c50-4092-99a0-996227454288.png" alt="MarineGEO circle logo"/>
   </kbd>
 </div>
 <br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;We can observe, that to calculate (fib 5), we calculate (fib 4) and (fib 3). To calculate (fib 4), we calculate (fib 3) and (fiber 2), and if we continue like this we get a tree, whose branches are divided in two at each level, except for the extremities.
+&nbsp;&nbsp;&nbsp;&nbsp;We can see that the graph of dependence of data volume and execution time is a straight line, which means that we are dealing with a linear complexity, so the execution time of that algorithm increases in direct proportion to the size of the input data, which is a result. better compared to the recursive algorithm.
 
 &nbsp;&nbsp;&nbsp;&nbsp;So we understand that such an approach is not exactly correct, because to calculate (fiber 5), we calculated twice (fib 3), three times (fib 2), five times fiber (1), and once with increasing the value of n, the number of repetitions will be increasing, because from what we see the number of steps increases exponentially, ie O (2n). On the other hand, the excessive use of recursion can lead to overloading the stack by exceeding its limits, and when the program tries to use more space than is available in the stack, the phenomenon of overflow also occurs, which leads to the fall. program without achieving an adequate result.
     
