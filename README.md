@@ -90,6 +90,55 @@ T(n) = c1*2 + c2 * (1 + n + 1 + 2n) + c3 * 2 * n + c4 * 2 * n=
 
 &nbsp;&nbsp;&nbsp;&nbsp;We can see that the graph of dependence of data volume and execution time is a straight line, which means that we are dealing with a linear complexity, so the execution time of that algorithm increases in direct proportion to the size of the input data, which is a result. better compared to the recursive algorithm.
 
+## Third implementation (iterative)
+
+```
+function fib3(n)
+     i = 1; j = 0; k = 0; h = 1
+     while n > 0 do
+          if n este impar then   t = jh
+                                 j = ih+jk+t
+                                 i = ik+t
+          t  = h2
+          h = 2kh+t
+          k = k2+t
+          n = n div 2
+     return j
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;That algorithm also uses the iterative method, so when the input data has high values, the stack overflow phenomenon should not occur as in the case of the first method. At first glance, it would seem that the algorithm uses a lot of arithmetic operations, but to determine how efficient it is, we will determine the execution time to find out its complexity:
+
+```
+function fib3(n)
+ 1.    i = 1; j = 0; k = 0; h = 1
+ 2.   while n > 0 do
+ 3.         if n este impar then  
+ 4.                              t = jh
+ 5.                              j = ih+jk+t
+ 6.                              i = ik+t
+ 7.        t  = h2
+ 8.        h = 2kh+t
+ 9.        k = k2+t
+ 10.      n = n div 2
+    return j
+    
+T(n) = c1 * 4 + c2 *((log(n) + 1) + c3 * (1 * log(n)) + c4 * (2 * ½ * log(n)) +
++ c5 * (5 * ½ * log(n))+ c6 * (3 * ½ * log(n))  +c7 * (2 * log(n)) +
++ c8 * (4 * log(n))+ c9 * (3 * log(n)) + c10 * (2 * log(n)) = 5 + 18 log(n) 
+
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;The complexity of that algorithm is O (log (n)), to represent it in graphical form as a dependence of time on the input data:
+
+<div align="center">
+  <kbd>
+    <img src="https://user-images.githubusercontent.com/60443226/164976642-daa01a7a-94ff-459a-853b-22c9d44bd2e7.png" alt="MarineGEO circle logo"/>
+  </kbd>
+</div>
+<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;With this algorithm, the execution time will decrease as the data increases, which means that the algorithm is quite efficient, especially for processing big data.
+
 # Sorting Algorithms
 
 ## Sorting by Quicksort algorithm
