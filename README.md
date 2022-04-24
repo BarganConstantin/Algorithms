@@ -1,13 +1,15 @@
 Table of Contents
 =================
+* [Sorting Algorithms](#Sorting-Algorithms)
+	* [Quicksort algorithm](#Sorting-by-Quicksort-algorithm)
+		* [Implementation of Quicksort](#Implementation-of-Quicksort)
+	* [MergeSort algorithm](#Sorting-by-MergeSort-algorithm)
+		* [Implementation of MergeSort](#Implementation-of-MergeSort)
+	* [Arithmetic operators](#arithmetic-operators)
+		* [Implementation of Radix Sort](#Implementation-of-Radix-Sort)
+	* [Comparison operators](#comparison-operators)
 
-* [Quicksort algorithm](#Sorting-by-Quicksort-algorithm)
-	* [Implementation of Quicksort](#Implementation-of-Quicksort)
-* [MergeSort algorithm](#Sorting-by-MergeSort-algorithm)
-	* [Implementation of MergeSort](#Implementation-of-MergeSort)
-* [Arithmetic operators](#arithmetic-operators)
-	* [Implementation of Radix Sort](#Implementation-of-Radix-Sort)
-* [Comparison operators](#comparison-operators)
+# Sorting Algorithms
 
 ## Sorting by Quicksort algorithm
 &nbsp;&nbsp;&nbsp;&nbsp;Quicksort is a sorting algorithm based on a divide et impera strategy. This divides the sorting list into two easier-to-sort sublists. The steps of the algorithm are:
@@ -187,7 +189,6 @@ void merge(int *Arr, int left, int center, int right)
 </div>
 
 <br/>
-<br/>
 
 ### Implementation of Radix Sort
 
@@ -243,3 +244,66 @@ void countSort(int *A, int n, int exp)
 
 ```
 
+<br/>
+<br/>
+
+## Sorting by Binary InseritonSort algorithm
+&nbsp;&nbsp;&nbsp;&nbsp;To reduce the number of comparisons in the usual form of the InsertionSort algorithm, we could use binary search, which Binary Insertion Sort does when looking for the correct location to add the item to each iteration.
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Thus, if in the normal form of the algorithm the complexity of the insertion represents O (n), using the binary search we will be able to obtain a complexity O (log n).
+
+<br/>
+<div align="center">
+  <kbd>
+    <img src="https://user-images.githubusercontent.com/60443226/164965608-d921b080-aa9d-4368-8f14-5a04e3b4fea8.png" alt="MarineGEO circle logo"/>
+  </kbd>
+</div>
+
+<br/>
+
+### Implementation of Binary InseritonSort
+
+```cpp
+void binaryInsertionSort(int *A, int n)
+{
+	int position;
+	int num;
+	int j;
+
+	for (int i = 1; i < n; i++)
+	{
+		j = i - 1;
+		num = A[i];
+
+		position = binarySearch(A, num, 0, j);
+
+		while (j >= position)
+		{
+			A[j + 1] = A[j];
+			j--;
+		}
+		A[j + 1] = num;
+	}
+}
+
+int binarySearch(int *A, int num, int start, int end)
+{
+	while (start <= end)
+	{
+		int center = start + (end - start) / 2;
+		if (num == A[center])
+		{
+			return center + 1;
+		}
+		else if (num > A[center])
+		{
+			start = center + 1;
+		}
+		else
+		{
+			end = center - 1;
+		}
+	}
+	return start;
+}
+```
