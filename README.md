@@ -52,7 +52,7 @@ function fib(n)
 
 &nbsp;&nbsp;&nbsp;&nbsp;So, we can say that using that algorithm, as the input data increases, the execution time will suddenly increase, which means that this method is very inefficient.
 
-## Second implementation (recursive)
+## Second implementation (iterative)
 
 ```
 function fib2(n)
