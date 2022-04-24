@@ -2,15 +2,12 @@ Table of Contents
 =================
 
 * [Quicksort algorithm](#Sorting-by-Quicksort-algorithm)
+	* [Implementation of Quicksort](#Implementation-of-Quicksort)
 * [MergeSort algorithm](#Sorting-by-MergeSort-algorithm)
+	* [Implementation of MergeSort](#Implementation-of-MergeSort)
 * [Arithmetic operators](#arithmetic-operators)
+	* [Implementation of Radix Sort](#Implementation-of-Radix-Sort)
 * [Comparison operators](#comparison-operators)
-
- * [Installation](#installation)
-      * [How to install python](#how-to-install-python)
-   * [Comment](#comment)
-   * [Operators](#operators)
-      * [Logical operators](#logical-operators)
 
 ## Sorting by Quicksort algorithm
 &nbsp;&nbsp;&nbsp;&nbsp;Quicksort is a sorting algorithm based on a divide et impera strategy. This divides the sorting list into two easier-to-sort sublists. The steps of the algorithm are:
@@ -33,8 +30,10 @@ Table of Contents
 <br/>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;The key process in QuickSort is performed by the partition function, which always arranges all the smaller elements like the pivot before it and all the larger elements after it, and the respective action is performed in a linear time.
+<br/> 
 <br/>
-<br/>
+
+### Implementation of Quicksort
 
 ```cpp
 void quick_sort(int *Arr, int start, int end)
@@ -90,11 +89,14 @@ int partition(int *Arr, int start, int end)
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;The problem of interclassing two sorted vectors a and b is solved as follows:
 <br/>
+
 - an intermediate vector c is used;
 - compare the element from the first position in the first vector with the element from the first position in the second vector; if the element of the first vector is smaller, it is copied to the vector c, then the scroll index is increased so that at the next comparison it indicates the second element; if the element in b is smaller, it will be copied to c, and the scroll index of b will be incremented to select the second element in b;
 - by successive comparisons, the ordered vector c is constructed, until the elements from a or b are finished; the remaining items in b, or a, as the case may be, shall be copied in order to c;
-<br/>
-<br/>
+
+<br/> 
+
+### Implementation of MergeSort
 
 ```cpp
 void merge_sort(int *Arr, int start, int end)
@@ -183,9 +185,11 @@ void merge(int *Arr, int left, int center, int right)
     <img src="https://user-images.githubusercontent.com/60443226/164964858-53a7fb3c-0eb0-477b-8f64-d3f8115e776d.png" alt="MarineGEO circle logo"/>
   </kbd>
 </div>
+
+<br/>
 <br/>
 
-#### Implementation of Radix Sort 
+### Implementation of Radix Sort
 
 ```cpp
 
