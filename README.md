@@ -2,6 +2,8 @@ Table of Contents
 =================
 * [Fibonacci Algorithms](#Fibonacci-Algorithms)
  	* [First implementation (recursive)](#First-implementation-(recursive))
+ 	* [Second implementation (recursive)](#Second-implementation-(iterative))
+ 	* [Third implementation (recursive)](#Third-implementation-(iterative))
 * [Sorting Algorithms](#Sorting-Algorithms)
 	* [Quicksort](#Sorting-by-Quicksort-algorithm)
 		* [Implementation of Quicksort](#Implementation-of-Quicksort)
