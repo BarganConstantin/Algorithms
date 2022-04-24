@@ -334,14 +334,14 @@ int binarySearch(int *A, int num, int start, int end)
   
   <br/>
   <p align="center">Number of comparisons<p/>
-
+<div align="center">
   |         | N = 100 |	N = 1000 | N = 10000 |	N = 100000 |	N = 1000000	| N = 10000000 |
   | :-----: | :-----: | :------: | :--------:| :---------: | :----------: | :----------: |
   | MergeSort |	424 |	7936 |	113343 |	1413320 |	14544600 |	215046000 |
   | QuickSort |	4950 |	499500 |	49995000 |	4999950000 |	10^9+ |	10^9+ |
   | RadixSort |	624 |	10936 |	153343 |	1913320 |	20544600 |	285046000 |
   | Binary InsertionSort |	1197 |	19913 |	276960 |	3482250 |	39496000 |	508269000 |
- 
+ </div>
  <br/>
   <p align="center">Graphic number of comparisons<p/>
   
