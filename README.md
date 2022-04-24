@@ -96,9 +96,7 @@ int partition(int *Arr, int start, int end)
 
 - an intermediate vector c is used;
 - compare the element from the first position in the first vector with the element from the first position in the second vector; if the element of the first vector is smaller, it is copied to the vector c, then the scroll index is increased so that at the next comparison it indicates the second element; if the element in b is smaller, it will be copied to c, and the scroll index of b will be incremented to select the second element in b;
-- by successive comparisons, the ordered vector c is constructed, until the elements from a or b are finished; the remaining items in b, or a, as the case may be, shall be copied in order to c;
-
-<br/> 
+- by successive comparisons, the ordered vector c is constructed, until the elements from a or b are finished; the remaining items in b, or a, as the case may be, shall be copied in order to c; 
 
 ### Implementation of MergeSort
 
