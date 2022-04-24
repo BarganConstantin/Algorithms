@@ -319,7 +319,7 @@ int binarySearch(int *A, int num, int start, int end)
 
 &nbsp;&nbsp;&nbsp;&nbsp;If we make a comparison between MergeSort and QuickSort, we notice that MergeSort requires large memory resources, even if there are some possibilities to reduce this, the implementation in the program will be very difficult, while QuickSort performs the sorting process in the same array, without use extra space. But if QuickSort has the advantage of low memory usage, then MergeSort has its advantage in complexity which is O (n log) and which remains the same regardless of the case, while QuickSort, even if in some situations has complexity O (n log ), for the unfavorable case it constitutes O (n ^ 2).
 
-&nbsp;&nbsp;&nbsp;&nbsp;If we talk about Radix Sort, it can be an alternative to the classic sorting algorithms, especially in times when the dependence on a high sorting speed is in the foreground, and the time for implementation is sufficient, so we have the advantage: Execution speed, the ability to sort different types of values (words, numbers), and the disadvantage: difficult implementation and of course extra memory consumption.
+&nbsp;&nbsp;&nbsp;&nbsp;If we talk about Radix Sort, it can be an alternative to the classic sorting algorithms, especially in times when the dependence on a high sorting speed is in the foreground, and the time for implementation is sufficient, so we have the advantage: execution speed, the ability to sort different types of values (words, numbers), and the disadvantage: difficult implementation and of course extra memory consumption.
 
 ### Sorted array
 
