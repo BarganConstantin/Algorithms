@@ -9,7 +9,7 @@ Table of Contents
 		* [Implementation of Radix Sort](#Implementation-of-Radix-Sort)
 	* [Binary InseritonSort](#Sorting-by-Binary-InseritonSort-algorithm)
 		* [Implementation of Binary InseritonSort](#Implementation-of-Binary-InseritonSort)
-	* [Empirical analysis](#Empirical analysis of this algorithms)
+	* [Empirical analysis](#Empirical-analysis-of-this-algorithms)
 		* [Sorted array](#Sorted-array)
 		* [Medium sorted array](#Medium-sorted-array)
 		* [Unsorted array](#Unsorted-array)
