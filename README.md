@@ -308,6 +308,8 @@ int binarySearch(int *A, int num, int start, int end)
 }
 ```
 
+<br/>
+
 ## Execution time in different situations
 
 &nbsp;&nbsp;&nbsp;&nbsp;After studying, analyzing and implementing the proposed sorting algorithms, we could reach certain conclusions regarding the efficiency of each, because each has certain advantages, but also certain disadvantages.
