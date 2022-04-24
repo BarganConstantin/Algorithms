@@ -190,6 +190,8 @@ T(n) = c1 * 4 + c2 *((log(n) + 1) + c3 * (1 * log(n)) + c4 * (2 * ½ * log(n)) +
 
 # Sorting Algorithms
 
+&nbsp;&nbsp;&nbsp;&nbsp;In computer science, a [sorting algorithm](https://en.wikipedia.org/wiki/Sorting_algorithm) is an algorithm that puts elements of a list into an order. The most frequently used orders are numerical order and lexicographical order, and either ascending or descending. Efficient sorting is important for optimizing the efficiency of other algorithms (such as search and merge algorithms) that require input data to be in sorted lists. Sorting is also often useful for canonicalizing data and for producing human-readable output.
+
 ## Sorting by Quicksort algorithm
 &nbsp;&nbsp;&nbsp;&nbsp;Quicksort is a sorting algorithm based on a divide et impera strategy. This divides the sorting list into two easier-to-sort sublists. The steps of the algorithm are:
 
