@@ -15,6 +15,7 @@ function fib(n)
     <img src="https://user-images.githubusercontent.com/60443226/164970200-7e2c3923-48c4-4b81-8f77-2b0ba18ddcda.png" alt="MarineGEO circle logo"/>
   </kbd>
 </div>
+<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;We can observe, that to calculate (fib 5), we calculate (fib 4) and (fib 3). To calculate (fib 4), we calculate (fib 3) and (fiber 2), and if we continue like this we get a tree, whose branches are divided in two at each level, except for the extremities.
 
@@ -27,5 +28,6 @@ function fib(n)
     <img src="https://user-images.githubusercontent.com/60443226/164975722-817b9128-2e50-421c-afb7-72a722d9d6a1.png" alt="MarineGEO circle logo"/>
   </kbd>
 </div>
+<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;So, we can say that using that algorithm, as the input data increases, the execution time will suddenly increase, which means that this method is very inefficient.
