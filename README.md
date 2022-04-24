@@ -1,3 +1,6 @@
+Table of Contents
+=================
+
 ## Sorting by Quicksort algorithm
 &nbsp;&nbsp;&nbsp;&nbsp;Quicksort is a sorting algorithm based on a divide et impera strategy. This divides the sorting list into two easier-to-sort sublists. The steps of the algorithm are:
 
