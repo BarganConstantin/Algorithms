@@ -324,6 +324,7 @@ int binarySearch(int *A, int num, int start, int end)
 ### Sorted array
 
 <p align="center">Execution time (in ms)<p/>
+<div align="center">
 
   |         | N = 100 |	N = 1000 | N = 10000 |	N = 100000 |	N = 1000000	| N = 10000000 |
   | :-----: | :-----: | :------: | :--------:| :---------: | :----------: | :----------: |
@@ -332,6 +333,8 @@ int binarySearch(int *A, int num, int start, int end)
   | RadixSort |	0 |	0 |	0.001 |	0.009 |	0.113 |	1.362 |
   | Binary InsertionSort |	0 |	0 |	0 |	0.006 |	0.076 |	0.903 |
   
+</div>
+
   <br/>
   <p align="center">Number of comparisons<p/>
 <div align="center">
@@ -358,6 +361,7 @@ int binarySearch(int *A, int num, int start, int end)
 ### Medium sorted array
 
 <p align="center">Execution time (in ms)<p/>
+<div align="center">
 
 |                             |     N = 100    |     N = 1000    |     N = 10000    |     N = 100000    |     N = 1000000    |     N = 10000000    |
 |:---------------------------:|:--------------:|:---------------:|:----------------:|:-----------------:|:------------------:|:-------------------:|
@@ -365,9 +369,12 @@ int binarySearch(int *A, int num, int start, int end)
 |           QuickSort         |        0       |         0       |         0        |        0.011      |        0.274       |        17.874       |
 |           RadixSort         |        0       |         0       |         0        |        0.007      |        0.074       |         0.773       |
 |     Binary InsertionSort    |        0       |         0       |       0.0039     |       12.744      |         30+        |          30+        |
-  
+ 
+</div>
+
   <br/>
   <p align="center">Number of comparisons<p/>
+  <div align="center">
 
 |                             |     N = 100    |     N = 1000    |     N = 10000    |     N = 100000    |     N = 1000000    |     N = 10000000    |
 |:---------------------------:|:--------------:|:---------------:|:----------------:|:-----------------:|:------------------:|:-------------------:|
@@ -376,6 +383,8 @@ int binarySearch(int *A, int num, int start, int end)
 |           RadixSort         |       1649     |       24897     |       348536     |       4591970     |       95483900     |      5626340000     |
 |     Binary InsertionSort    |       2181     |       33377     |       459400     |       5741580     |        10^8+       |         10^8+       |
  
+</div>
+
  <br/>
   <p align="center">Graphic number of comparisons<p/>
 
@@ -390,7 +399,8 @@ int binarySearch(int *A, int num, int start, int end)
 ### Unsorted array
 
 <p align="center">Execution time (in ms)<p/>
-
+<div align="center">
+	
 |                             |     N = 100    |     N = 1000    |     N = 10000    |     N = 100000    |     N = 1000000    |     N = 10000000    |
 |:---------------------------:|:--------------:|:---------------:|:----------------:|:-----------------:|:------------------:|:-------------------:|
 |           MergeSort         |        0       |         0       |       0.002      |        0.08       |        0.513       |         6.67        |
@@ -398,8 +408,10 @@ int binarySearch(int *A, int num, int start, int end)
 |           RadixSort         |        0       |         0       |       0.001      |        0.027      |        0.366       |         6.287       |
 |     Binary InsertionSort    |        0       |       0.001     |       0.288      |       30.565      |         40+        |          40+        ||
   
+</div>
   <br/>
   <p align="center">Number of comparisons<p/>
+  <div align="center">
 
 |                             |     N = 100    |     N = 1000    |     N = 10000    |     N = 100000    |     N = 1000000    |     N = 10000000    |
 |:---------------------------:|:--------------:|:---------------:|:----------------:|:-----------------:|:------------------:|:-------------------:|
@@ -408,6 +420,7 @@ int binarySearch(int *A, int num, int start, int end)
 |           RadixSort         |       813      |       12001     |       181997     |       2281540     |       26680800     |       322631000     |
 |     Binary InsertionSort    |       6195     |       52402     |       507864     |       5054250     |        10^9+       |         10^9+       |
  
+</div>	
  <br/>
   <p align="center">Graphic number of comparisons<p/>
   
