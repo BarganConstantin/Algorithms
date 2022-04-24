@@ -1,13 +1,15 @@
 Table of Contents
 =================
 * [Sorting Algorithms](#Sorting-Algorithms)
-	* [Quicksort algorithm](#Sorting-by-Quicksort-algorithm)
+	* [Quicksort](#Sorting-by-Quicksort-algorithm)
 		* [Implementation of Quicksort](#Implementation-of-Quicksort)
-	* [MergeSort algorithm](#Sorting-by-MergeSort-algorithm)
+	* [MergeSort](#Sorting-by-MergeSort-algorithm)
 		* [Implementation of MergeSort](#Implementation-of-MergeSort)
-	* [Arithmetic operators](#arithmetic-operators)
+	* [RadixSort](#Sorting-by-RadixSort-algorithm)
 		* [Implementation of Radix Sort](#Implementation-of-Radix-Sort)
-	* [Comparison operators](#comparison-operators)
+	* [Binary InseritonSort](#Sorting-by-Binary-InseritonSort-algorithm)
+		* [Implementation of Binary InseritonSort](#Implementation-of-Binary-InseritonSort)
+
 
 # Sorting Algorithms
 
