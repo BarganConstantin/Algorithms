@@ -178,6 +178,8 @@ T(n) = c1 * 4 + c2 *((log(n) + 1) + c3 * (1 * log(n)) + c4 * (2 * ½ * log(n)) +
      
 </div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Performing an analysis on the results, we understand that they confirm the above, because the most inefficient algorithm proved to be the first, which also has an extremely large number of iterations, so the execution time gradually becomes more and more extensive. , and the third most efficient algorithm, because it is executed practically at the moment with a rather small number of iterations.
+<br/>
 
 # Sorting Algorithms
 
