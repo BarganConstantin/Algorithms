@@ -1,6 +1,7 @@
 ## Empirical analysis of this Fibonacci algorithms
 
 <p align="center">Execution time and number of iterations (fib1)<p/>
+<div align="center">
 
 |  n | Execution Time (ms) | Number of iterations  |
 |:--:|:-------------------:|:---------------------:|
