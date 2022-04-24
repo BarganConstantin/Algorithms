@@ -4,6 +4,7 @@ Table of Contents
  	* [First implementation (recursive)](#First-implementation-recursive)
  	* [Second implementation (iterative)](#Second-implementation-iterative)
  	* [Third implementation (iterative)](#Third-implementation-iterative)
+ 	* [Empirical analysis](#Empirical-analysis-of-this-Fibonacci-algorithms)
 * [Sorting Algorithms](#Sorting-Algorithms)
 	* [Quicksort](#Sorting-by-Quicksort-algorithm)
 		* [Implementation of Quicksort](#Implementation-of-Quicksort)
