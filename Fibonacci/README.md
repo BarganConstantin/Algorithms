@@ -15,3 +15,9 @@ function fib(n)
     <img src="https://user-images.githubusercontent.com/60443226/164970200-7e2c3923-48c4-4b81-8f77-2b0ba18ddcda.png" alt="MarineGEO circle logo"/>
   </kbd>
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;From what We can observe, that to calculate (fib 5), we calculate (fib 4) and (fib 3). To calculate (fib 4), we calculate (fib 3) and (fiber 2), and if we continue like this we get a tree, whose branches are divided in two at each level, except for the extremities.
+
+&nbsp;&nbsp;&nbsp;&nbsp;So we understand that such an approach is not exactly correct, because to calculate (fiber 5), we calculated twice (fib 3), three times (fib 2), five times fiber (1), and once with increasing the value of n, the number of repetitions will be increasing, because from what we see the number of steps increases exponentially, ie O (2n). On the other hand, the excessive use of recursion can lead to overloading the stack by exceeding its limits, and when the program tries to use more space than is available in the stack, the phenomenon of overflow also occurs, which leads to the fall. program without achieving an adequate result.
+    
+&nbsp;&nbsp;&nbsp;&nbsp;Likewise, in order to visualize the behavior of the algorithm, at a large number of data, we will represent its complexity through a graph, which shows us the dependence between the data volume and the execution time:
