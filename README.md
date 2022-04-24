@@ -159,5 +159,18 @@ void merge(int *Arr, int left, int center, int right)
 
 <br/>
 
+## Sorting by RadixSort algorithm
+&nbsp;&nbsp;&nbsp;&nbsp;Radix Sort is one of the fastest sorting methods. It is based on sorting by the most insignificant "digit":
+- Radix Sort is not based on a comparison technique. Each element in the vector (or attribute of an element, in the case of structures) after which we sort will be called the key.
+- Keys are thought of as strings of "characters" (where a "character" can be a bit, a number, a letter,…).
+
+<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;The algorithm goes through the following steps:
+1. starting from the position of the most insignificant "character", we count how many times each "character" appears on that position, then we divide an auxiliary vector into sections (imaginary). The number of sections is the number of different "characters" that can exist in the vector, ie each section is associated with a "character", the size of a section depends on the number of occurrences of the associated "character";
+2. put each element (in the auxiliary vector) in the corresponding section, then copy the auxiliary vector back to the vector to be sorted. A sorted vector is obtained to the current position;
+3. we move on to the next position and repeat the steps, the last position being that of the most significant "character".
+
+<br/>
 
 
