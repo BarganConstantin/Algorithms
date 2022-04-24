@@ -1,7 +1,7 @@
 Table of Contents
 =================
 * [Fibonacci Algorithms](#Fibonacci-Algorithms)
- 	* [First implementation (recursive)](#First-implementation-(recursive))
+ 	* [First implementation (recursive)](#First-implementation-recursive)
  	* [Second implementation (iterative)](#Second-implementation-(iterative))
  	* [Third implementation (iterative)](#Third-implementation-(iterative))
 * [Sorting Algorithms](#Sorting-Algorithms)
