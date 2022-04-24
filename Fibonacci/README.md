@@ -12,6 +12,6 @@ function fib(n)
 
 <div align="center">
   <kbd>
-    <img src="https://user-images.githubusercontent.com/60443226/164970092-b2c50bb1-3ad9-4443-b7bf-a3d3009311ef.png" alt="MarineGEO circle logo"/>
+    <img src="https://user-images.githubusercontent.com/60443226/164970200-7e2c3923-48c4-4b81-8f77-2b0ba18ddcda.png" alt="MarineGEO circle logo"/>
   </kbd>
 </div>
