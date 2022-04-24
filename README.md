@@ -379,3 +379,35 @@ int binarySearch(int *A, int num, int start, int end)
 </div>
 
 <br/>
+
+### Unsorted array
+
+<p align="center">Execution time (in ms)<p/>
+
+|                             |     N = 100    |     N = 1000    |     N = 10000    |     N = 100000    |     N = 1000000    |     N = 10000000    |
+|:---------------------------:|:--------------:|:---------------:|:----------------:|:-----------------:|:------------------:|:-------------------:|
+|           MergeSort         |        0       |         0       |       0.002      |        0.08       |        0.513       |         6.67        |
+|           QuickSort         |        0       |       0.003     |       0.405      |       48.593      |         40+        |          40+        |
+|           RadixSort         |        0       |         0       |       0.001      |        0.027      |        0.366       |         6.287       |
+|     Binary InsertionSort    |        0       |       0.001     |       0.288      |       30.565      |         40+        |          40+        ||
+  
+  <br/>
+  <p align="center">Number of comparisons<p/>
+
+|                             |     N = 100    |     N = 1000    |     N = 10000    |     N = 100000    |     N = 1000000    |     N = 10000000    |
+|:---------------------------:|:--------------:|:---------------:|:----------------:|:-----------------:|:------------------:|:-------------------:|
+|           MergeSort         |       505      |       7993      |       132017     |       1681060     |       19699600     |       242631000     |
+|           QuickSort         |       5415     |       51204     |       506227     |       5052180     |        10^9+       |         10^9+       |
+|           RadixSort         |       813      |       12001     |       181997     |       2281540     |       26680800     |       322631000     |
+|     Binary InsertionSort    |       6195     |       52402     |       507864     |       5054250     |        10^9+       |         10^9+       |
+ 
+ <br/>
+  <p align="center">Graphic number of comparisons<p/>
+  
+<div align="center">
+  <kbd>
+    <img src="https://user-images.githubusercontent.com/60443226/164967292-e2b3b7bf-1319-43b8-9ab1-093316bb15bf.png" alt="MarineGEO circle logo"/>
+  </kbd>
+</div>
+
+<br/>
