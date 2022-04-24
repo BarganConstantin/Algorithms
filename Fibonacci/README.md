@@ -1,13 +1,12 @@
 ## Empirical analysis of this Fibonacci algorithms
 
-<p align="center">Execution time and number of iterations
+<p align="center">Execution time and number of iterations (fib1)<p/>
 
 |  n | Execution Time (ms) | Number of iterations  |
 |:--:|:-------------------:|:---------------------:|
 | 10 |        0.0598       |          177          |
 | 40 |     117526.80443    |       331160281       |
 
-     
 </div>
 
 <p align="center">Execution time and number of iterations (fib2)<p/>
