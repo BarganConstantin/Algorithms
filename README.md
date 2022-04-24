@@ -6,6 +6,12 @@ Table of Contents
 * [Arithmetic operators](#arithmetic-operators)
 * [Comparison operators](#comparison-operators)
 
+ * [Installation](#installation)
+      * [How to install python](#how-to-install-python)
+   * [Comment](#comment)
+   * [Operators](#operators)
+      * [Logical operators](#logical-operators)
+
 ## Sorting by Quicksort algorithm
 &nbsp;&nbsp;&nbsp;&nbsp;Quicksort is a sorting algorithm based on a divide et impera strategy. This divides the sorting list into two easier-to-sort sublists. The steps of the algorithm are:
 
@@ -172,5 +178,64 @@ void merge(int *Arr, int left, int center, int right)
 3. we move on to the next position and repeat the steps, the last position being that of the most significant "character".
 
 <br/>
+<div align="center">
+  <kbd>
+    <img src="https://user-images.githubusercontent.com/60443226/164964858-53a7fb3c-0eb0-477b-8f64-d3f8115e776d.png" alt="MarineGEO circle logo"/>
+  </kbd>
+</div>
+<br/>
 
+#### Implementation of Radix Sort 
+
+```cpp
+
+int getMax(int *A, int n)
+{
+	int max = A[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (A[i] > max)
+			max = A[i];
+	}
+	return max;
+}
+
+void radixsort(int *A, int n)
+{
+	int m = getMax(A, n);
+
+	for (int i = 1; m / i > 0; i = i * 10)
+	{
+		countSort(A, n, i);
+	}
+}
+
+void countSort(int *A, int n, int exp)
+{
+	int* result = new int[n];
+	int count[10] = { 0 };
+
+	for (int i = 0; i < n; i++)
+	{
+		count[(A[i] / exp) % 10]++;
+	}
+
+	for (int i = 1; i < 10; i++)
+	{
+		count[i] += count[i - 1];
+	}
+
+	for (int i = n - 1; i >= 0; i--) {
+		result[count[(A[i] / exp) % 10] - 1] = A[i];
+		count[(A[i] / exp) % 10]--;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		A[i] = result[i];
+	}
+
+	delete[] result;
+}
+
+```
 
